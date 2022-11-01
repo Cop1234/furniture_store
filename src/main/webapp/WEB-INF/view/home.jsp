@@ -9,6 +9,6 @@
     <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
 </div>
 <jsp:include page="/WEB-INF/view/layouts/footer.jsp"/>
-<h1>Hello World !! From BigC</h1>
+<h1>Hello World !! From BigC Test Commit</h1>
 </body>
 </html>
