@@ -12,6 +12,9 @@
         <%--    <security:authorize access="hasRole('MANAGER')">--%>
         <li><a href="${pageContext.request.contextPath}/furniture/list">เฟอร์นิเจอร์</a></li>
         <%--    </security:authorize>--%>
+<%--        <security:authorize access="hasRole('ADMIN')">--%>
+        <li><a href="${pageContext.request.contextPath}/store/list">ร้านเฟอร์นิเจอร์</a></li>
+<%--        </security:authorize>--%>
     </ul>
 </nav>
 <hr>

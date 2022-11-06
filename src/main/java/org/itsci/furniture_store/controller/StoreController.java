@@ -15,7 +15,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/store")
 public class StoreController {
-    private String title = "ร้านค้า";
+    private String title = "ร้านเฟอร์นิเจอร์";
 
     @Autowired
     private StoreService storeService;
@@ -23,7 +23,7 @@ public class StoreController {
     @GetMapping("/list")
     public String listStore(Model model) {
         model.addAttribute("title", "รายการ" + title);
-        model.addAttribute("store", storeService.getStores());
+        model.addAttribute("stores", storeService.getStores());
         return "store/list";
     }
 

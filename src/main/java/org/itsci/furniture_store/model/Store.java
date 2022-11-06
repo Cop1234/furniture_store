@@ -17,7 +17,7 @@ public class Store {
     private int id;
 
     @NotNull
-    @Pattern(regexp = "^SH[0-9]{3}")
+    @Pattern(regexp = "^ST[0-9]{3}")
     @Column(name = "code", length = 10, nullable = false, unique = true)
     private String code;
 

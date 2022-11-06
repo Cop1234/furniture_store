@@ -38,8 +38,11 @@ public class StoreDaoImpl implements StoreDao{
     }
 
     @Override
-    public void deleteStore(int id) {
-
+    public void deleteStore(int storeId) {
+        Session session = sessionFactory.getCurrentSession();
+        Query query = session.createQuery("delete from Store where id =:storeId ");
+        query.setParameter("storeId", storeId);
+        query.executeUpdate();
     }
 
     @Override

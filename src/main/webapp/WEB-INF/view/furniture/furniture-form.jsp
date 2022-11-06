@@ -68,14 +68,14 @@
                                onclick="window.location.href='${pageContext.request.contextPath}/furniture/list'; return false;"
                                class="cancel-button"
                         />
-                        <c:if test="${furniture.id > 0}">
-                            <input type="button" value="แสดงเฟอร์นิเจอร์"
-                                   onclick="window.location.href=
-                                           '${pageContext.request.contextPath}/furniture/${furniture.id}/view-stores';
-                                           return false;"
-                                   class="add-button"
-                            />
-                        </c:if>
+<%--                        <c:if test="${furniture.id > 0}">--%>
+<%--                            <input type="button" value="แสดงเฟอร์นิเจอร์"--%>
+<%--                                   onclick="window.location.href=--%>
+<%--                                           '${pageContext.request.contextPath}/furniture/${furniture.id}/view-stores';--%>
+<%--                                           return false;"--%>
+<%--                                   class="add-button"--%>
+<%--                            />--%>
+<%--                        </c:if>--%>
                     </td>
                 </tr>
                 </tbody>
