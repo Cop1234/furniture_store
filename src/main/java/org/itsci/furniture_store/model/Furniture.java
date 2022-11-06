@@ -1,6 +1,8 @@
 package org.itsci.furniture_store.model;
 
+import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.ManyToAny;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -17,7 +19,7 @@ public class Furniture {
     int id;
 
     @NotNull
-    @Pattern(regexp="^PD[0-9]{4}")
+    @Pattern(regexp="^FT[0-9]{4}")
     @Column(length = 10, nullable = false, unique = true)
     @NotNull
     private String code;

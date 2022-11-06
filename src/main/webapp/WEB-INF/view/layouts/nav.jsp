@@ -9,6 +9,9 @@
 <nav>
     <ul>
         <li><a href="${pageContext.request.contextPath}">หน้าหลัก</a></li>
+        <%--    <security:authorize access="hasRole('MANAGER')">--%>
+        <li><a href="${pageContext.request.contextPath}/furniture/list">เฟอร์นิเจอร์</a></li>
+        <%--    </security:authorize>--%>
     </ul>
 </nav>
 <hr>

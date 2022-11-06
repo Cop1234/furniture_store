@@ -39,7 +39,7 @@ public class Store {
     private String address;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "stores")
-    private List<Furniture> products;
+    private List<Furniture> furnitures;
 
     public void fill(Store store) {
         this.code = store.getCode();
@@ -50,12 +50,12 @@ public class Store {
         this.address = store.getAddress();
     }
 
-    public List<Furniture> getProducts() {
-        return products;
+    public List<Furniture> getFurnitures() {
+        return furnitures;
     }
 
-    public void setProducts(List<Furniture> products) {
-        this.products = products;
+    public void setFurnitures(List<Furniture> furnitures) {
+        this.furnitures = furnitures;
     }
 
     public int getId() {

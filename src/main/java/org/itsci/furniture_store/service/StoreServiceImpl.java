@@ -5,9 +5,12 @@ import org.itsci.furniture_store.dao.StoreDao;
 import org.itsci.furniture_store.model.Furniture;
 import org.itsci.furniture_store.model.Store;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
+@Service
 public class StoreServiceImpl implements StoreService{
 
     @Autowired
@@ -17,37 +20,44 @@ public class StoreServiceImpl implements StoreService{
     private FurnitureDao furnitureDao;
 
     @Override
+    @Transactional
     public List<Furniture> getFurnitureDoesNotHaveStore(int id) {
         return storeDao.getFurnitureDoesNotHaveStore(id);
     }
 
     @Override
+    @Transactional
     public List<Store> getStores() {
         return storeDao.getStores();
     }
 
     @Override
+    @Transactional
     public void saveStore(Store store) {
         storeDao.saveStore(store);
     }
 
     @Override
+    @Transactional
     public Store getStore(int StoreId) {
         return storeDao.getStore(StoreId);
     }
 
     @Override
+    @Transactional
     public void deleteStore(int StoreId) {
         storeDao.deleteStore(StoreId);
     }
 
     @Override
+    @Transactional
     public void updateStore(Store StoreEntity, Store store) {
         StoreEntity.fill(store);
         storeDao.saveStore(StoreEntity);
     }
 
     @Override
+    @Transactional
     public void addFurnitureToStore(int storeId, int furnitureId) {
         Store store = storeDao.getStore(storeId);
         Furniture furniture = furnitureDao.getFurniture(furnitureId);
@@ -56,6 +66,7 @@ public class StoreServiceImpl implements StoreService{
     }
 
     @Override
+    @Transactional
     public void removeFurnitureFromStore(int furnitureId, int storeId) {
         Store store = storeDao.getStore(storeId);
         Furniture furniture = furnitureDao.getFurniture(furnitureId);

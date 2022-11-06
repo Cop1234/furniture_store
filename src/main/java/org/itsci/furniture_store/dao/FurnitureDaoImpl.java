@@ -37,8 +37,11 @@ public class FurnitureDaoImpl implements FurnitureDao{
     }
 
     @Override
-    public void deleteFurniture(int id) {
-
+    public void deleteFurniture(int FurnitureId) {
+        Session session = sessionFactory.getCurrentSession();
+        Query query = session.createQuery("delete from Furniture where id =:FurnitureId ");
+        query.setParameter("FurnitureId", FurnitureId);
+        query.executeUpdate();
     }
 
     @Override
