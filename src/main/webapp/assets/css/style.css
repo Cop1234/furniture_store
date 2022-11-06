@@ -1,6 +1,18 @@
 html, body{
-    margin-left:15px;
-    margin-right:15px;
     padding:0px;
-    font-family: Itim;
+    font-family: Mitr;
+}
+/*Home Page*/
+.bg_home{
+
+}
+
+.div_white_home{
+    background-color: white;
+    height: 100%;
+    width: 50%;
+}
+
+h1{
+    font-size: 60px;
 }
