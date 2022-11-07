@@ -24,24 +24,24 @@
     <div class="div_prod1">
         <p class="home_prod1">Leisure chair</p>
         <p class="home_price1">฿990</p>
-        <img src="${pageContext.request.contextPath}/assets/image/chair_home1.png" class="chair_home1">
+        <img src="${pageContext.request.contextPath}/assets/image/h_chair_1.png" class="chair_home1">
     </div>
 
     <div class="div_prod2">
         <p class="home_prod2">Simple chair</p>
         <p class="home_price2">฿1200</p>
-        <img src="image/h_chair_2.png" class="chair_home2">
+        <img src="${pageContext.request.contextPath}/assets/image/h_chair_2.png" class="chair_home2">
     </div>
 
     <div class="div_prod3">
         <p class="home_prod3">Fashion chai</p>
         <p class="home_price3">฿1590</p>
-        <img src="image/h_chair_3.png" class="chair_home3">
+        <img src="${pageContext.request.contextPath}/assets/image/h_chair_3.png" class="chair_home3">
 
     </div>
 </div>
-<a href=""><img src="image/logo_icon.png" class="logo_icon"></a>
-<img src="../image/chair.png" class="chair_home">
+<a href=""><img src="${pageContext.request.contextPath}/assets/image/logo_icon.png" class="logo_icon"></a>
+<img src="${pageContext.request.contextPath}/assets/image/chair.png" class="chair_home">
 <hr class="line_vertical_home">
 
 
