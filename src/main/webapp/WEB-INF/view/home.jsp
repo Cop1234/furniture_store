@@ -24,7 +24,7 @@
     <div class="div_prod1">
         <p class="home_prod1">Leisure chair</p>
         <p class="home_price1">฿990</p>
-        <img src="image/h_chair_1.png" class="chair_home1">
+        <img src="${pageContext.request.contextPath}/assets/image/chair_home1.png" class="chair_home1">
     </div>
 
     <div class="div_prod2">
