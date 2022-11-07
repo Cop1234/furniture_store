@@ -37,7 +37,6 @@
         <p class="home_prod3">Fashion chai</p>
         <p class="home_price3">฿1590</p>
         <img src="${pageContext.request.contextPath}/assets/image/h_chair_3.png" class="chair_home3">
-
     </div>
 </div>
 <a href="">
