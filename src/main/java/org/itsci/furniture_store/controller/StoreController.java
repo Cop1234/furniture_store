@@ -2,6 +2,7 @@ package org.itsci.furniture_store.controller;
 
 import org.itsci.furniture_store.model.Furniture;
 import org.itsci.furniture_store.model.Store;
+import org.itsci.furniture_store.service.FurnitureService;
 import org.itsci.furniture_store.service.StoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,6 +20,9 @@ public class StoreController {
 
     @Autowired
     private StoreService storeService;
+
+    @Autowired
+    private FurnitureService furnitureService;
 
     @GetMapping("/list")
     public String listStore(Model model) {
@@ -77,7 +81,7 @@ public class StoreController {
     @GetMapping("/{id}/furniture/add")
     public String showFurnitureForAdd(@PathVariable("id") int id, Model model) {
         Store store = storeService.getStore(id);
-        List<Furniture> furnitures = storeService.getFurnitureDoesNotHaveStore(id);
+        List<Furniture> furnitures = furnitureService.getFurnitureDoesNotHaveStore(id);
         model.addAttribute("title", "เพิมร้านค้า");
         model.addAttribute("store", store);
         model.addAttribute("furnitures", furnitures);

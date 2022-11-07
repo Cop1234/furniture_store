@@ -21,8 +21,8 @@ public class StoreServiceImpl implements StoreService{
 
     @Override
     @Transactional
-    public List<Furniture> getFurnitureDoesNotHaveStore(int id) {
-        return storeDao.getFurnitureDoesNotHaveStore(id);
+    public List<Store> getStoreDoesNotHaveFurniture(int id) {
+        return storeDao.getStoreDoesNotHaveFurniture(id);
     }
 
     @Override

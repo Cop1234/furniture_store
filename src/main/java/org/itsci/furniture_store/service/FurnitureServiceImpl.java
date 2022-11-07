@@ -32,8 +32,8 @@ public class FurnitureServiceImpl implements FurnitureService{
 
     @Override
     @Transactional
-    public List<Store> getStoreDoesNotHaveFurniture(int id) {
-        return furnitureDao.getStoreDoesNotHaveFurniture(id);
+    public List<Furniture> getFurnitureDoesNotHaveStore(int id) {
+        return furnitureDao.getFurnitureDoesNotHaveStore(id);
     }
 
     @Override

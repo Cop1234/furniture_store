@@ -4,6 +4,7 @@ import org.itsci.furniture_store.model.Furniture;
 import org.itsci.furniture_store.model.Store;
 import org.itsci.furniture_store.service.CategoryService;
 import org.itsci.furniture_store.service.FurnitureService;
+import org.itsci.furniture_store.service.StoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
@@ -28,6 +29,9 @@ public class FurnitureController {
 
     @Autowired
     private FurnitureService furnitureService;
+
+    @Autowired
+    private StoreService storeService;
 
     @Autowired
     private CategoryService categoryService;
@@ -92,7 +96,7 @@ public class FurnitureController {
     @GetMapping("/{id}/store/add")
     public String showStoreForAdd(@PathVariable("id") int id, Model model) {
         Furniture furniture = furnitureService.getFurniture(id);
-        List<Store> stores = furnitureService.getStoreDoesNotHaveFurniture(id);
+        List<Store> stores = storeService.getStoreDoesNotHaveFurniture(id);
         model.addAttribute("title", "เพิ่มร้านค้า");
         model.addAttribute("furniture", furniture);
         model.addAttribute("stores", stores);

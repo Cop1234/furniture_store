@@ -7,9 +7,8 @@ import java.util.List;
 
 public interface StoreService {
     List<Store> getStores();
-    List<Furniture> getFurnitureDoesNotHaveStore(int id);
+    List<Store> getStoreDoesNotHaveFurniture(int id);
     public void saveStore(Store store);
-
     Store getStore(int StoreId);
     void deleteStore(int StoreId);
     void updateStore(Store StoreEntity, Store store);

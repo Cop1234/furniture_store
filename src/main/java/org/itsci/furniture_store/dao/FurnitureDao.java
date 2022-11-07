@@ -8,9 +8,8 @@ import java.util.List;
 public interface FurnitureDao {
     List<Furniture> getFurnitures();
     void saveFurniture(Furniture furniture);
-
     Furniture getFurniture(int id);
-
     void deleteFurniture(int id);
-    List<Store> getStoreDoesNotHaveFurniture(int id);
+
+    List<Furniture> getFurnitureDoesNotHaveStore(int id);
 }

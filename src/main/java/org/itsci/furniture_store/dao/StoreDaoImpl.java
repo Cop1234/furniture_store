@@ -46,7 +46,14 @@ public class StoreDaoImpl implements StoreDao{
     }
 
     @Override
-    public List<Furniture> getFurnitureDoesNotHaveStore(int id) {
-        return null;
+    public List<Store> getStoreDoesNotHaveFurniture(int id) {
+        Session session = sessionFactory.getCurrentSession();
+        Query<Store> query = session.createQuery("select s.stores from Furniture s where s.id=:id");
+        query.setParameter("id", id);
+        List<Store> Store1 = query.getResultList();
+        query = session.createQuery("from Store");
+        List<Store> Store2 = query.getResultList();
+        Store2.removeAll(Store1);
+        return Store2;
     }
 }

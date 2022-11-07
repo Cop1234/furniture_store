@@ -12,6 +12,7 @@ import java.util.List;
 
 @Repository
 public class FurnitureDaoImpl implements FurnitureDao{
+
     @Autowired
     private SessionFactory sessionFactory;
 
@@ -30,9 +31,9 @@ public class FurnitureDaoImpl implements FurnitureDao{
     }
 
     @Override
-    public Furniture getFurniture(int id) {
+    public Furniture getFurniture(int furnitureid) {
         Session session = sessionFactory.getCurrentSession();
-        Furniture furniture = session.get(Furniture.class, id);
+        Furniture furniture = session.get(Furniture.class, furnitureid);
         return furniture;
     }
 
@@ -45,7 +46,14 @@ public class FurnitureDaoImpl implements FurnitureDao{
     }
 
     @Override
-    public List<Store> getStoreDoesNotHaveFurniture(int id) {
-        return null;
+    public List<Furniture> getFurnitureDoesNotHaveStore(int id) {
+        Session session = sessionFactory.getCurrentSession();
+        Query<Furniture> query = session.createQuery("select s.furnitures from Store s where s.id=:id");
+        query.setParameter("id", id);
+        List<Furniture> Furniture1 = query.getResultList();
+        query = session.createQuery("from Furniture");
+        List<Furniture> Furniture2 = query.getResultList();
+        Furniture2.removeAll(Furniture1);
+        return Furniture2;
     }
 }

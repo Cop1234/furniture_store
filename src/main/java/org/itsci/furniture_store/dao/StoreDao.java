@@ -11,5 +11,5 @@ public interface StoreDao {
     Store getStore(int id);
     void deleteStore(int id);
 
-    List<Furniture> getFurnitureDoesNotHaveStore(int id);
+    List<Store> getStoreDoesNotHaveFurniture(int id);
 }
