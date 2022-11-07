@@ -1,6 +1,9 @@
 html{
     padding: 0px;
     font-family: Mitr;
+}
+
+.bg_page{
     background-color: rgb(49 152 218);
     /*background-image: linear-gradient(to right, rgb(95 193 255), #00ffd7);*/
 }

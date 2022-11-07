@@ -7,19 +7,22 @@
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <nav>
-    <ul>
-        <li><a href="${pageContext.request.contextPath}">หน้าหลัก</a></li>
+
+    <ul class="navbar">
+        <li><a href="${pageContext.request.contextPath}" style="color: #3198da;">Home</a></li>
 
         <security:authorize access="hasRole('MANAGER')">
-            <li><a href="${pageContext.request.contextPath}/furniture/list">เฟอร์นิเจอร์</a></li>
+            <li><a href="${pageContext.request.contextPath}/furniture/list" style="color: #3198da;">Product</a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('ADMIN')">
-            <li><a href="${pageContext.request.contextPath}/store/list">ร้านเฟอร์นิเจอร์</a></li>
+            <li><a href="${pageContext.request.contextPath}/store/list" style="color: #3198da;">Store</a></li>
         </security:authorize>
 
+        <li><a href="#about" style="color: #3198da;">About</a></li>
+
         <security:authorize access="!isAuthenticated()">
-            <li><a href="${pageContext.request.contextPath}/login" >ลงชื่อเข้าสู่ระบบ</a></li>
+            <li><a href="${pageContext.request.contextPath}/login" style="color: #3198da;">Login</a></li>
         </security:authorize>
 
         <security:authorize access="isAuthenticated()">
@@ -30,5 +33,6 @@
             <li><a href="#" onclick="javascript: frmLogout.submit();">ลงชื่อออกจากระบบ</a></li>
         </security:authorize>
     </ul>
+
 </nav>
 <hr>
