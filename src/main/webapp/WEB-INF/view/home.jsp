@@ -40,7 +40,8 @@
 
     </div>
 </div>
-<a href=""><img src="${pageContext.request.contextPath}/assets/image/logo_icon.png" class="logo_icon"></a>
+<a href="">
+    <img src="${pageContext.request.contextPath}/assets/image/logo_icon.png" class="logo_icon"></a>
 <img src="${pageContext.request.contextPath}/assets/image/chair.png" class="chair_home">
 <hr class="line_vertical_home">
 

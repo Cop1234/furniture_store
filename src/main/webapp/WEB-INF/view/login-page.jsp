@@ -26,8 +26,9 @@
                 <td><input type="password" name="password"/></td>
             </tr>
 
-            <tr><td><input type="submit" value="เข้าสู่ระบบ"/></td></tr>
-            <tr><td><a href="${pageContext.request.contextPath}/register">ลงทะเบียน</a></td></tr>
+            <tr>
+                <td><input type="submit" value="เข้าสู่ระบบ"/></td>
+            </tr>
         </table>
     </form:form>
 

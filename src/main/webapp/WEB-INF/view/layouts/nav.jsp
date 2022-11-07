@@ -11,18 +11,16 @@
         <li><a href="${pageContext.request.contextPath}" style="color: #3198da;">Home</a></li>
 
         <security:authorize access="hasRole('MEMBER')">
-            <li><a href="${pageContext.request.contextPath}/member-show/list">Furniture</a></li>
+            <li><a href="${pageContext.request.contextPath}/member-show/list">Products</a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('MANAGER')">
-            <li><a href="${pageContext.request.contextPath}/furniture/list" style="color: #3198da;">ManageFurniture</a></li>
+            <li><a href="${pageContext.request.contextPath}/furniture/list" style="color: #3198da;">Furniture</a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('ADMIN')">
             <li><a href="${pageContext.request.contextPath}/store/list" style="color: #3198da;">Store</a></li>
         </security:authorize>
-
-        <li><a href="#about" style="color: #3198da;">About</a></li>
 
         <security:authorize access="!isAuthenticated()">
             <li><a href="${pageContext.request.contextPath}/login" style="color: #3198da;">Login</a></li>
@@ -37,4 +35,3 @@
     </ul>
 
 </nav>
-<hr>

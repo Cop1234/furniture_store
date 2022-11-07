@@ -8,12 +8,11 @@
 </head>
 <body>
 <h1>${title}</h1>
+
 <div class="container">
-    <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
     <input type="button" value="เพิ่มร้านเฟอร์นิเจอร์"
            onclick="window.location.href='${pageContext.request.contextPath}/store/create'; return false;"
-           class="add-button"
-    />
+           class="add-button"/>
     <table>
         <thead>
         <tr>

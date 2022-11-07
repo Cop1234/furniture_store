@@ -139,7 +139,6 @@ html{
 
 
 /*Navbar*/
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -153,12 +152,13 @@ li {
 
 .navbar{
     margin-top: -618px;
-    margin-left: 1087px;
+    margin-left: 800px;
     position: absolute;
     font-family: 'Mitr';
     font-size: 24px;
     font-weight: bold;
 }
+
 
 a{
     text-decoration: none;
