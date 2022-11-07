@@ -7,12 +7,15 @@
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <nav>
-
     <ul class="navbar">
         <li><a href="${pageContext.request.contextPath}" style="color: #3198da;">Home</a></li>
 
+        <security:authorize access="hasRole('MEMBER')">
+            <li><a href="${pageContext.request.contextPath}/member-show/list">Furniture</a></li>
+        </security:authorize>
+
         <security:authorize access="hasRole('MANAGER')">
-            <li><a href="${pageContext.request.contextPath}/furniture/list" style="color: #3198da;">Product</a></li>
+            <li><a href="${pageContext.request.contextPath}/furniture/list" style="color: #3198da;">ManageFurniture</a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('ADMIN')">
@@ -28,7 +31,6 @@
         <security:authorize access="isAuthenticated()">
             <li>
                 User: <security:authentication property="principal.username" />
-                Role: <security:authentication property="principal.authorities" />
             </li>
             <li><a href="#" onclick="javascript: frmLogout.submit();">ลงชื่อออกจากระบบ</a></li>
         </security:authorize>
