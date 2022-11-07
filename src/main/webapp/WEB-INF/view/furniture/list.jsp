@@ -5,6 +5,10 @@
 <html>
 <head>
     <title>${title}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+<%--    <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet" type="text/css">--%>
 </head>
 <body>
 <h1>${title}</h1>
@@ -37,5 +41,6 @@
         <br><br>
     </c:forEach>
 </div>
+<jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
 </body>
 </html>

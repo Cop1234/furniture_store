@@ -16,7 +16,7 @@
     <table>
         <thead>
         <tr>
-            <th>รหัสสินค้า</th><th>ชื่อสินค้า</th><th>เจ้าของร้าน</th><th>Latitude</th><th>Longitude</th><th>จำนวนสินค้า</th>
+            <th>รหัสเฟอร์นิเจอร์</th><th>ชื่อเฟอร์นิเจอร์</th><th>เจ้าของร้าน</th><th>Latitude</th><th>Longitude</th><th>จำนวนสินค้า</th>
         </tr>
         </thead>
         <tbody>

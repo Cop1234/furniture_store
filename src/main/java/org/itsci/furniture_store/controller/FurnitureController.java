@@ -55,7 +55,7 @@ public class FurnitureController {
     public String processForm(@Valid @ModelAttribute("furniture") Furniture furniture,
                               BindingResult bindingResult, Model model){
         if (bindingResult.hasErrors()) {
-            model.addAttribute("title", "มีข้อผิดพลาดในการบนัทึก" + title);
+            model.addAttribute("title", "มีข้อผิดพลาดในการบันทึก" + title);
             model.addAttribute("categories", categoryService.getCategories());
             return "furniture/furniture-form";
         } else {

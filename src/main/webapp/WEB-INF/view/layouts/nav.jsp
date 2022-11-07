@@ -4,7 +4,7 @@
 <form:form action="${pageContext.request.contextPath}/logout" method="POST" name="frmLogout"></form:form>
 
 <head>
-    <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet" type="text/css">
+<%--    <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet" type="text/css">--%>
 </head>
 <nav>
     <ul class="navbar">
@@ -33,5 +33,4 @@
             <li><a href="#" onclick="javascript: frmLogout.submit();">ลงชื่อออกจากระบบ</a></li>
         </security:authorize>
     </ul>
-
 </nav>
