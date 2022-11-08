@@ -9,7 +9,6 @@
 <body>
 <h1>${title}</h1>
 <div class="container">
-    <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
     <c:forEach var="furniture" items="${furnitures}">
     <table class="table-bordered">
         <tbody><%--<a href="${pageContext.request.contextPath}/member-show/${furniture.id}/result">${furniture.code}</a>--%>

@@ -11,7 +11,6 @@
     <h1>${title}</h1>
 </div>
 <div class="container">
-    <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
     <input type="button" value="เพิ่มร้านเฟอร์นิเจอร์"onclick="window.location.href='${pageContext.request.contextPath}/furniture/${furniture.id}/store/add';return false;"class="add-button"/>
     <table class="table-bordered">
         <thead>

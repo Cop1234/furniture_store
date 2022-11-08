@@ -28,7 +28,7 @@
             <li>
                 User: <security:authentication property="principal.username" />
             </li>
-            <li><a href="#" onclick="javascript: frmLogout.submit();">ลงชื่อออกจากระบบ</a></li>
+            <li><a href="#" onclick="javascript: frmLogout.submit();">ออกจากระบบ</a></li>
         </security:authorize>
     </ul>
 </nav>
