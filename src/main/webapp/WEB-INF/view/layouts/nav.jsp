@@ -10,7 +10,13 @@
     <ul class="navbar">
         <li><a href="${pageContext.request.contextPath}" style="color: #3198da;">Home</a></li>
 
-        <li><a href="${pageContext.request.contextPath}/guest" style="color: #3198da;">Product</a></li>
+        <security:authorize access="!isAuthenticated()">
+            <li><a href="${pageContext.request.contextPath}/guest-show/list" style="color: #3198da;">Products</a></li>
+        </security:authorize>
+
+        <security:authorize access="hasRole('MEMBER')">
+            <li><a href="${pageContext.request.contextPath}/member-show/list" style="color: #3198da;">Products</a></li>
+        </security:authorize>
 
         <security:authorize access="hasRole('MANAGER')">
             <li><a href="${pageContext.request.contextPath}/furniture/list" style="color: #3198da;">Furniture</a></li>

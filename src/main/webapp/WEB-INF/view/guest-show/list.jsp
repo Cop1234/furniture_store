@@ -12,7 +12,7 @@
     <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
     <c:forEach var="furniture" items="${furnitures}">
         <table class="table-bordered">
-            <tbody><%--<a href="${pageContext.request.contextPath}/member-show/${furniture.id}/result">${furniture.code}</a>--%>
+            <tbody>
             <tr>
                 <td rowspan="3">${furniture.code}</td></td>
                 <td>${furniture.name}</td>
