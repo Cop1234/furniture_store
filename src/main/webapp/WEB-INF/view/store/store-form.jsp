@@ -69,14 +69,6 @@
                                onclick="window.location.href='${pageContext.request.contextPath}/store/list'; return false;"
                                class="cancel-button"
                         />
-                        <c:if test="${store.id > 0}">
-                            <input type="button" value="แสดงร้านค้า"
-                                   onclick="window.location.href=
-                                           '${pageContext.request.contextPath}/store/${store.id}/view-furnitures';
-                                           return false;"
-                                   class="add-button"
-                            />
-                        </c:if>
                     </td>
                 </tr>
                 </tbody>
