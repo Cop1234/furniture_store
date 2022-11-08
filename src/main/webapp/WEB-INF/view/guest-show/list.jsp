@@ -8,6 +8,7 @@
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
 </head>
 <body style="margin: 0">
+<a href="${pageContext.request.contextPath}"><img src="${pageContext.request.contextPath}/assets/image/logo_icon.png" class="logo_icon"></a>
 <h1 class="h_list_fur">${title}</h1>
 <div class="container">
     <table class="table-bordered">

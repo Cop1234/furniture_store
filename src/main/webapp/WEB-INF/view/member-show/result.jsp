@@ -4,6 +4,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
+    <a href="${pageContext.request.contextPath}"><img src="${pageContext.request.contextPath}/assets/image/logo_icon.png" class="logo_icon"></a>
     <title>${title}</title>
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
     <script language="javascript">

@@ -39,8 +39,7 @@
         <img src="${pageContext.request.contextPath}/assets/image/h_chair_3.png" class="chair_home3">
     </div>
 </div>
-<a href="">
-    <img src="${pageContext.request.contextPath}/assets/image/logo_icon.png" class="logo_icon"></a>
+<a href="${pageContext.request.contextPath}"><img src="${pageContext.request.contextPath}/assets/image/logo_icon.png" class="logo_icon"></a>
 <img src="${pageContext.request.contextPath}/assets/image/chair.png" class="chair_home">
 <hr class="line_vertical_home">
 

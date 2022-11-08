@@ -13,7 +13,7 @@
 <body>
 <h1 class="h_list_fur">${title}</h1>
 <div class="container">
-    <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
+    <a href="${pageContext.request.contextPath}"><img src="${pageContext.request.contextPath}/assets/image/logo_icon.png" class="logo_icon" style="margin-top: -64px"></a>
     <input type="button" value="เพิ่มสินค้า"
            onclick="window.location.href='${pageContext.request.contextPath}/furniture/create'; return false;"
            class="add-button"/>

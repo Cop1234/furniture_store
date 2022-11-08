@@ -10,7 +10,7 @@
 </head>
 <body style="font-family: Mitr">
 <h1 class="list_s_h1">${title}</h1>
-
+<a href="${pageContext.request.contextPath}"><img src="${pageContext.request.contextPath}/assets/image/logo_icon.png" class="logo_icon" style="margin-top: -57px"></a>
 <div class="container">
     <input type="button" value="เพิ่มร้านเฟอร์นิเจอร์" onclick="window.location.href='${pageContext.request.contextPath}/store/create'; return false;" class="add-button-fur"/>
 
