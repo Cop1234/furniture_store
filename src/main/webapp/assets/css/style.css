@@ -364,3 +364,17 @@ a{
     color: #3ed43e;
     font-weight: 500;
 }
+
+/*Store Form*/
+.h1-store-from{
+    margin-left: 610px;
+    margin-top: 38px;
+    position: absolute;
+}
+
+.div-store-from{
+    margin-top: 135px;
+    margin-left: 516px;
+    position: absolute;
+    font-size: 18px;
+}

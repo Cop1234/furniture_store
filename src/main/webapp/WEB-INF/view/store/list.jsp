@@ -8,12 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: Mitr">
 <h1 class="list_s_h1">${title}</h1>
 
 <div class="container">
-    <input type="button" value="เพิ่มร้านเฟอร์นิเจอร์"
-           onclick="window.location.href='${pageContext.request.contextPath}/store/create'; return false;" class="add-button-fur"/>
+    <input type="button" value="เพิ่มร้านเฟอร์นิเจอร์" onclick="window.location.href='${pageContext.request.contextPath}/store/create'; return false;" class="add-button-fur"/>
 
     <table class="tb_list_fur">
         <thead>
@@ -26,7 +25,7 @@
             <th style="width: 225px;">จำนวนสินค้า</th>
         </tr>
         </thead>
-        <tbody>
+
         <c:forEach var="store" items="${stores}">
             <tr>
                 <td>
@@ -39,7 +38,7 @@
                 <td><p style="margin-left: 100px">${fn:length(store.furnitures)}</p></td>
             </tr>
         </c:forEach>
-        </tbody>
+
     </table>
 </div>
 </body>

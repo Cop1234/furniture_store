@@ -5,11 +5,11 @@
 <html>
 <head>
     <title>${title}</title>
+    <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
 </head>
-<body>
-<div id="header"><h1>${title}</h1></div>
-<div class="container">
-    <div id="container">
+<body style="font-family: Mitr">
+<h1 class="h1-store-from">${title}</h1>
+<div class="div-store-from">
         <i>กรอกข้อมูลในฟอร์ม. เครื่องหมายดอกจัน (*) หมายถึงห้ามว่าง</i><br><br>
         <form:form action="${pageContext.request.contextPath}/store/save " modelAttribute="store" method="POST">
             <form:hidden path="id"/>
@@ -74,7 +74,6 @@
                 </tbody>
             </table>
         </form:form>
-    </div>
 </div>
 </body>
 </html>
