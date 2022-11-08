@@ -301,3 +301,14 @@ a{
     margin-top: 42px;
     font-size: 22px;
 }
+
+/*Login*/
+.log-header{
+    margin-left: 635px;
+    margin-top: 138px;
+}
+
+.log-div{
+    margin-left: 597px;
+    margin-top: 36px;
+}

@@ -24,13 +24,13 @@
         <tbody><c:forEach var="store" items="${stores}">
             <tr>
                 <td class="center">
-                    <p style="margin-left: 60px"><a href="${pageContext.request.contextPath}/store/${store.id}/update">${store.code}</a></p>
+                    <p style="margin-left: 73px"><a href="${pageContext.request.contextPath}/store/${store.id}/update">${store.code}</a></p>
 
                 </td>
-                <td><p style="margin-left: 60px">${store.name}</p></td>
-                <td><p style="margin-left: 60px">${store.owner}</p></td>
+                <td><p style="margin-left: 65px">${store.name}</p></td>
+                <td><p style="margin-left: 94px">${store.owner}</p></td>
                 <td class="center">
-                    <p style="margin-left: 60px"><a href="${pageContext.request.contextPath}/furniture/${furniture.id}/store/${store.id}/remove">ลบ</a></p>
+                    <p style="margin-left: 104px"><a href="${pageContext.request.contextPath}/furniture/${furniture.id}/store/${store.id}/remove">ลบ</a></p>
                 </td>
             </tr>
         </c:forEach></tbody>

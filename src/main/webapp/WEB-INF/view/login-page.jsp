@@ -3,33 +3,42 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <html>
-<head><title>${title}</title>
-    <link href="${pageContext.request.contextPath}/assets/css/login.css" rel="stylesheet">
+<head>
+    <title>${title}</title>
+    <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body class="frame">
-<h1>${title}</h1>
-<div class="container">
-
-    <c:if test="${param.error != null}">ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</c:if>
-    <c:if test="${param.logout != null}">คุณออกจากระบบแล้ว</c:if>
+<body style="font-family: Mitr">
+<h1 class="log-header">${title}</h1>
+<div class="log-div">
     <form:form action="${pageContext.request.contextPath}/authenticate" method="POST">
         <table>
             <tr>
-                <td><p class="font1">ชื่อผู้ใช้</p></td>
-                <td><input class="box1" type="text" name="username"/></td>
+                <td><p>ชื่อผู้ใช้</p></td>
+                <td><input type="text" name="username" class="form-control"/></td>
             </tr>
 
             <tr>
-                <td><p class="font1">รหัสผ่าน</p></td>
-                <td><input class="box1" type="password" name="password"/></td>
+                <td><p>รหัสผ่าน</p></td>
+                <td><input type="password" name="password" class="form-control"/></td>
             </tr>
 
             <tr>
-                <td><input class="box2" type="submit" value="เข้าสู่ระบบ"/></td>
+                <td></td>
+                <td><input type="submit" value="เข้าสู่ระบบ" class="btn btn-outline-success"/></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <c:if test="${param.error != null}">ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</c:if>
+                    <c:if test="${param.logout != null}">คุณออกจากระบบแล้ว</c:if>
+                </td>
             </tr>
         </table>
     </form:form>
 
 </div>
+
 </body>
 </html>
