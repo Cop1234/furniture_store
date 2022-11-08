@@ -1,0 +1,44 @@
+html{
+    font-family: kanit;
+}
+
+
+.font1{
+    font-size: 25px;
+}
+
+h1{
+    font-size: 40px;
+    color: rgb(11, 11, 62);
+    margin-left: 220px;
+    margin-top: 65px;
+}
+
+.container{
+    margin-left: 155px;
+    font-size: 25px;
+    border: 5px black;
+}
+
+.box1{
+    width: 250px;
+    height: 25px;
+}
+
+.box2{
+    font-size: 20px;
+    width: 105px;
+    height: 45px;
+    background-color: lightgreen;
+    border: lightgreen;
+    border-radius: 10px;
+}
+
+.frame{
+    border: solid 5px black;
+    margin-top: 165px;
+    margin-right: 400px;
+    margin-left: 400px;
+    height: 365px;
+    border-radius: 10px;
+}
