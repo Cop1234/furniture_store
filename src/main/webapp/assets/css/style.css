@@ -227,3 +227,29 @@ a{
     margin-left: 22px;
 }
 
+/*List Furniture*/
+.h_list_fur{
+    margin-left: 600px;
+    font-weight: bold;
+    margin-top: 36px;
+}
+
+.add-button{
+    margin-left: 664px;
+    height: 50px;
+    width: 106px;
+    font-family: 'Mitr';
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: #a3a3a3 3px 2px 4px 1px;
+    cursor: pointer;
+}
+
+.table-bordered{
+    margin-left: 374px;
+    margin-top: 33px;
+    font-size: 22px;
+}

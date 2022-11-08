@@ -10,9 +10,7 @@
     <ul class="navbar">
         <li><a href="${pageContext.request.contextPath}" style="color: #3198da;">Home</a></li>
 
-        <security:authorize access="hasRole('MEMBER')">
-            <li><a href="${pageContext.request.contextPath}/member-show/list" style="color: #3198da;">Products</a></li>
-        </security:authorize>
+        <li><a href="${pageContext.request.contextPath}/member-show/list" style="color: #3198da;">Product</a></li>
 
         <security:authorize access="hasRole('MANAGER')">
             <li><a href="${pageContext.request.contextPath}/furniture/list" style="color: #3198da;">Furniture</a></li>
