@@ -5,14 +5,11 @@
 <html>
 <head>
     <title>${title}</title>
+
 </head>
 <body>
 <div id="header"><h1>${title}</h1></div>
 <div class="container">
-    <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
-</div>
-<div class="container">
-
     <div id="container">
         <i>กรอกข้อมูลในฟอร์ม. เครื่องหมายดอกจัน (*) หมายถึงห้ามว่าง</i><br><br>
         <form:form action="${pageContext.request.contextPath}/furniture/save " modelAttribute="furniture" method="POST">
