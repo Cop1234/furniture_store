@@ -9,7 +9,6 @@
 <body>
 <div id="header"><h1>${title}</h1></div>
 <div class="container">
-    <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
     <div id="container">
         <i>กรอกข้อมูลในฟอร์ม. เครื่องหมายดอกจัน (*) หมายถึงห้ามว่าง</i><br><br>
         <form:form action="${pageContext.request.contextPath}/store/save " modelAttribute="store" method="POST">

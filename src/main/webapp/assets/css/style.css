@@ -253,3 +253,51 @@ a{
     margin-top: 33px;
     font-size: 22px;
 }
+
+
+/*List Store*/
+.list_s_h1{
+    margin-left: 600px;
+    margin-top: 20px;
+}
+
+.add-button-fur{
+    margin-left: 664px;
+    height: 50px;
+    width: 157px;
+    font-family: 'Mitr';
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: #a3a3a3 3px 2px 4px 1px;
+    cursor: pointer;
+}
+
+.tb_list_fur{
+    margin-left: 76px;
+    margin-top: 41px;
+    font-size: 23px;
+}
+
+/*View Store*/
+.add-view-store{
+    margin-left: 624px;
+    height: 50px;
+    width: 221px;
+    font-family: 'Mitr';
+    font-weight: 600;
+    font-size: 23px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: #a3a3a3 3px 2px 4px 1px;
+    cursor: pointer;
+}
+
+.table-view-store{
+    margin-left: 282px;
+    margin-top: 42px;
+    font-size: 22px;
+}

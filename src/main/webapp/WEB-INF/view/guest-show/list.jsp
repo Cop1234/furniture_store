@@ -9,9 +9,10 @@
 <body>
 <h1>${title}</h1>
 <div class="container">
+    <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
     <c:forEach var="furniture" items="${furnitures}">
-    <table class="table-bordered">
-        <tbody><%--<a href="${pageContext.request.contextPath}/member-show/${furniture.id}/result">${furniture.code}</a>--%>
+        <table class="table-bordered">
+            <tbody>
             <tr>
                 <td rowspan="3">${furniture.code}</td></td>
                 <td>${furniture.name}</td>
@@ -20,25 +21,15 @@
             <tr>
                 <td class="number">
                     <fmt:formatNumber type="number" pattern="###,###.00"
-                    value="${furniture.price}"/>
+                                      value="${furniture.price}"/>
                 </td>
             </tr>
 
             <tr>
                 <td>${furniture.description}</td>
             </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td rowspan="2">
-                    <input type="button" value="ซื้อ"
-                           onclick="window.location.href='${pageContext.request.contextPath}/member-show/${furniture.id}/result'; return false;"
-                           class="add-button"
-                    />
-                </td>
-            </tr>
-        </tfoot>
-    </table>
+            </tbody>
+        </table>
         <br><br>
     </c:forEach>
 </div>

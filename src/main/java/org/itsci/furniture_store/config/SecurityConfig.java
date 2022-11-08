@@ -15,7 +15,8 @@ public class SecurityConfig {
         http.authorizeRequests(configurer -> {
             // configurer.anyRequest().authenticated();
             configurer.antMatchers("/furniture/**").hasRole("MANAGER")
-                    .antMatchers("/store/**").hasRole("ADMIN");
+                    .antMatchers("/store/**").hasRole("ADMIN")
+                    .antMatchers("/member-show/**").hasRole("MEMBER");
             //.antMatchers("/user/**").hasRole("ADMIN");
         });
         http.formLogin(configurer -> {
