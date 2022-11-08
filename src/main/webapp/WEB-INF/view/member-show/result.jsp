@@ -52,12 +52,11 @@
             <button class="bt-cal" onclick="javascript: cc() , hide();">สั่งซื้อ</button>
         </div>
     </table>
-
 </div>
 
 <div class="area-result">
-    <p class="mes-result"></p>
-    <p style="margin-left: 33px;"></p>
+    <p id="show1" class="mes-result"></p>
+    <p id="show2" style="margin-left: 33px;"></p>
 </div>
 </body>
 </html>
