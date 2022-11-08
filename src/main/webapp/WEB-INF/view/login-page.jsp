@@ -3,7 +3,9 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <html>
-<head><title>${title}</title></head>
+<head><title>${title}</title>
+    <link href="${pageContext.request.contextPath}/assets/css/login.css" rel="stylesheet">
+</head>
 <body>
 <h1>${title}</h1>
 <div class="container">
@@ -13,22 +15,23 @@
     <form:form action="${pageContext.request.contextPath}/authenticate" method="POST">
         <table>
             <tr>
-                <td><p>ชื่อผู้ใช้</p></td>
-                <td><input type="text" name="username"/></td>
+                <td><p class="font1">ชื่อผู้ใช้</p></td>
+                <td><input class="box1" type="text" name="username"/></td>
             </tr>
 
             <tr>
-                <td><p>รหัสผ่าน</p></td>
-                <td><input type="password" name="password"/></td>
+                <td><p class="font1">รหัสผ่าน</p></td>
+                <td><input class="box1" type="password" name="password"/></td>
             </tr>
 
             <tr>
-                <td><input type="submit" value="เข้าสู่ระบบ"/></td>
+                <td><input class="box2" type="submit" value="เข้าสู่ระบบ"/></td>
             </tr>
         </table>
     </form:form>
 
 </div>
-<jsp:include page="/WEB-INF/view/layouts/footer.jsp"/>
+
+
 </body>
 </html>
