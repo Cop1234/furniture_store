@@ -350,6 +350,7 @@ a{
     background-color: #59a7f7;
     color: white;
     box-shadow: #c2c2c2 2px 2px 4px 0px;
+    position: absolute;
 }
 
 .area-result{
