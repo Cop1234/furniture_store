@@ -7,20 +7,18 @@
     <link href="${pageContext.request.contextPath}/assets/css/style.css"
 rel="stylesheet">
 </head>
-<body>
-<div id="header">
-    <h1>${title}</h1>
-</div>
-<div class="container">
-<jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
+<body style="font-family: Mitr">
+<h1 class="h1-pro-add-store">${title}</h1>
+
+<div class="area-pro-add-store">
 <form action="${pageContext.request.contextPath}/furniture/${furniture.id}/store/add" method="post">
     <table class="table-bordered">
         <thead>
         <tr>
-            <th>รหัสร้านเฟอร์นิเจอร์</th>
-            <th>ชื่อร้านเฟอร์นิเจอร์</th>
-            <th>ชื่อเจ้าของ</th>
-            <th>Action</th>
+            <td style="width: 100px">รหัสร้าน</td>
+            <td style="width: 186px">ชื่อร้าน</td>
+            <td style="width: 172px">ชื่อเจ้าของ</td>
+            <td style="width: 100px">Action</td>
         </tr>
         </thead>
         <tbody>
@@ -30,7 +28,7 @@ rel="stylesheet">
                 </td>
                 <td>${store.name}</td>
                 <td>${store.owner}</td>
-                <td class="center"><button type="submit" name="store" value="${store.id}">เพิ่ม</button></td>
+                <td class="center"><button type="submit" class="bt-pro-add-store"  name="store" value="${store.id}">เพิ่ม</button></td>
             </tr>
         </c:forEach>
         </tbody>

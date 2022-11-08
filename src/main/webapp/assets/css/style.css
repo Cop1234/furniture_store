@@ -378,3 +378,29 @@ a{
     position: absolute;
     font-size: 18px;
 }
+
+/*add product to store*/
+.h1-pro-add-store{
+    margin-left: 684px;
+    margin-top: 27px;
+    position: absolute;
+}
+
+.area-pro-add-store{
+    margin-top: 66px;
+    margin-left: 117px;
+    position: absolute;
+}
+
+.bt-pro-add-store{
+    height: 37px;
+    width: 73px;
+    border: none;
+    border-radius: 11px;
+    background-color: #86b2f4;
+    font-family: Mitr;
+    font-size: 16px;
+    color: white;
+    box-shadow: #c4c0c0 2px 2px 5px 0px;
+    cursor: pointer;
+}
