@@ -5,32 +5,30 @@
 <html>
 <head>
     <title>${title}</title>
+    <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
 </head>
-<body>
-<h1>${title}</h1>
+<body style="margin: 0">
+<h1 class="h_list_fur">${title}</h1>
 <div class="container">
-    <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
+    <table class="table-bordered">
+        <tr>
+            <td style="width: 140px;">รหัสสินค้า</td>
+            <td style="width: 300px;">ชื่อสินค้า</td>
+            <td style="width: 150px;">ราคา</td>
+            <td style="width: 400px;">รายละเอียด</td>
+        </tr>
+    </table>
     <c:forEach var="furniture" items="${furnitures}">
         <table class="table-bordered">
             <tbody>
             <tr>
-                <td rowspan="3">${furniture.code}</td></td>
-                <td>${furniture.name}</td>
-            </tr>
-
-            <tr>
-                <td class="number">
-                    <fmt:formatNumber type="number" pattern="###,###.00"
-                                      value="${furniture.price}"/>
-                </td>
-            </tr>
-
-            <tr>
-                <td>${furniture.description}</td>
+                <td style="width: 140px; font-weight: 200;">${furniture.code}</td></td>
+                <td style="width: 300px; font-weight: 200;">${furniture.name}</td>
+                <td style="width: 150px; font-weight: 200;"><fmt:formatNumber type="number" pattern="###,###.00" value="${furniture.price}"/></td>
+                <td style="width: 400px; font-weight: 200;">${furniture.description}</td>
             </tr>
             </tbody>
         </table>
-        <br><br>
     </c:forEach>
 </div>
 </body>

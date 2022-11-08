@@ -14,7 +14,6 @@
         <a href="${pageContext.request.contextPath}/">กลับไปหน้าแรก</a>
     </div>
 </div>
-    <jsp:include page="/WEB-INF/view/layouts/footer.jsp"/>
 </body>
 </html>
 

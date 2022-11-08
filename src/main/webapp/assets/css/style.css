@@ -318,3 +318,48 @@ a{
     margin-top: -7px;
     position: absolute;
 }
+
+.table-list-member{
+    margin-left: 291px;
+    margin-top: 35px;
+    font-size: 22px;
+}
+
+.table-list-data-member{
+    margin-left: 291px;
+    margin-top: 33px;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.area-qty{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 740px;
+}
+
+.bt-cal{
+    margin-left: 23px;
+    height: 35px;
+    width: 104px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: Mitr;
+    font-size: 15px;
+    background-color: #59a7f7;
+    color: white;
+    box-shadow: #c2c2c2 2px 2px 4px 0px;
+}
+
+.area-result{
+    margin-left: 600px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.mes-result{
+    margin-left: 56px;
+    color: #3ed43e;
+    font-weight: 500;
+}
