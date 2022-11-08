@@ -312,3 +312,9 @@ a{
     margin-left: 597px;
     margin-top: 36px;
 }
+
+.login-icon{
+    height: 50px;
+    margin-top: -7px;
+    position: absolute;
+}
